@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dragger</title>
+    <link rel="stylesheet" type="text/css" href="./dragger.css" />
+  </head>
+  <body onload="startTime()">
+    <div class="header-div-cls">
+      <header class="header-cls">
+        position : 
+        <form name="myForm" style="display: inline;">
+          <input type="radio" name="myRadios"  value="1" /> Center
+          <input type="radio" name="myRadios"  value="2" /> Left Bottom
+      </form>
+        <span class="drag-right">
+          <span class="hide-show"
+            >Press Escape to hide the window and Enter to show it again.</span
+          >
+          <span id="timer">Timer</span>
+        </span>
+      </header>
+    </div>
+    <div class="floater-container" id ="drag-cont">
+      <div class="floater" id ="floater-box">
+        <span style="font-weight: bold">Floating...</span>
+        <p class="drag-text">Drag me around...</p>
+      </div>
+    </div>
+    <div class="footer-div-cls"><footer class="footer-cls"></footer></div>
+
+    <script src="./dragger.js"></script>
+  </body>
+</html>
